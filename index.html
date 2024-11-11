@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/output.css">
+    <title>Qr Code Generator</title>
+</head>
+<body class="bg-slate-200 flex items-center justify-center h-screen">
+    <div class="container bg-white max-w-sm mx-auto border border-slate-100 p-4 md:p-8 lg:p-12">
+        <!-- input section -->
+        <h1 class="font-bold text-2xl text-center">Qr Code Generator</h1>
+        <div class="flex flex-col gap-4">
+            <input type="text" id="input-text" placeholder="Enter your text or link here" class="border border-slate-100 p-4">
+            <button type="button" id="generate-qr-code" class="border-blue-400 bg-blue-200 px-4 py-2 rounded-md w-fit">Generate Qr Code</button>
+        </div>
+        <!-- qr code image section -->
+        <div id="qr-code" class="mt-4 pt-4 border-t border-slate-400">
+
+        </div>
+        <!-- other code snippet -->
+        <div id="loader" class="hidden w-10 h-10 rounded-full border border-t-8 border-blue-400 animate-spin mx-auto">
+        </div>
+        <button type="button" id="download-qr-code" class="flex gap-4 fixed top-4 -right-full border border-slate-100 rounded-md shadow-md bg-white px-4 py-2 hover:bg-slate-100 transition-all">
+            <img class="w-6 h-6" src="./assets/image/download.svg" alt="">
+            Download Qr Code
+        </button>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="./assets/scripts/main_script.js"></script>
+</body>
+</html>
