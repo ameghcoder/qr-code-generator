@@ -8,6 +8,10 @@ Want to change style, run this
 And then use tailwind to change the style  
 `npx tailwindcss -i ./assets/styles/input.css -o ./assets/style/output.css --watch`
 
+## Preview
+[Preview Url](https://ameghcoder.github.io/qr-code-generator/)
+![Preview Image](/assets/image/preview.png)
+
 Used Library QrCodeJs  
 Official Source:  [https://davidshimjs.github.io/qrcodejs/](https://davidshimjs.github.io/qrcodejs/ "https://davidshimjs.github.io/qrcodejs/")
 
